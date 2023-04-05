@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="491dp"
+        tools:context=".MapsActivity" />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="580dp"
+        android:onClick="getLocationDetails"
+        android:text="@string/GetLocation"
+        android:textSize="15sp" />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="620dp"
+        android:onClick="saveLocationDetails"
+        android:text="@string/saveLocation"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="235dp"
+        android:layout_height="190dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="500dp"
+        android:text="@string/LocationDisplay" />
+
+    <EditText
+        android:id="@+id/editTextLat"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="500dp"
+        android:hint="@string/Latitude" />
+
+    <EditText
+        android:id="@+id/editTextLong"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="550dp"
+        android:hint="@string/Longitude" />
+
+</FrameLayout>
